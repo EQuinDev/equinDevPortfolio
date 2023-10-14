@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./index.html", "./src/**/*.jsx"],
   theme: {
-    extend: {},
+    extend: {
+        backgroundColor: {
+            'black-light': '#333333', // Cambia este valor al color deseado
+        },
+    },
   },
   plugins: [],
 }
-
