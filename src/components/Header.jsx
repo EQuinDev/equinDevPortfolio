@@ -1,4 +1,4 @@
-import '../styles/responsive.css';
+import '../styles/responsivo.css';
 
 const Header = () => {
     const handleClick = (event, sectionId) => {
@@ -23,7 +23,16 @@ const Header = () => {
           <li>
             <a
               href="#"
-              onClick={(event) => handleClick(event, 'skills')}
+              onClick={(event) => handleClick(event, 'sobremi')}
+              className="text-white hover:text-blue-500"
+            >
+              Sobre Mi
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onClick={(event) => handleClick(event, 'habilidades')}
               className="text-white hover:text-blue-500"
             >
               Habilidades
@@ -32,19 +41,10 @@ const Header = () => {
           <li>
             <a
               href="#"
-              onClick={(event) => handleClick(event, 'projects')}
+              onClick={(event) => handleClick(event, 'proyectos')}
               className="text-white hover:text-blue-500"
             >
               Proyectos
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onClick={(event) => handleClick(event, 'contact')}
-              className="text-white hover:text-blue-500"
-            >
-              Contacto
             </a>
           </li>
         </ul>
