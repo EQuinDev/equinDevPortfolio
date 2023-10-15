@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import SobreMi from './components/SobreMi';
+import Habilidades from './components/Habilidades';
 import './index.css';
 
 import { useState } from 'react';
@@ -22,7 +23,7 @@ function App() {
         </section>
 
         <section id='habilidades'>
-            
+            <Habilidades />
         </section>
 
         <section id='proyectos'>
