@@ -18,6 +18,9 @@
     justify-content: center;
     gap: 1rem;
     perspective: 1200px; /* Agrega perspectiva para efecto 3D */
+    background: #222; /* Fondo oscuro */
+    padding: 2rem; /* Espaciado interno aumentado */
+    border-radius: 10px; /* Borde redondeado */
   }
   
   .skills-icon {
@@ -25,10 +28,20 @@
     height: 100px;
     border: 2px solid transparent;
     transition: transform 0.3s, border 0.3s;
+    animation: rotate 5s linear infinite; /* Animación tipo sistema solar */
   }
   
   .skills-icon:hover {
-    transform: rotate(360deg); /* Efecto de giro */
+    transform: rotate(360deg); /* Efecto de giro al pasar el mouse */
     border: 2px solid white; /* Borde blanco al pasar el mouse */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   

@@ -1,5 +1,5 @@
-import myPhoto from '../images/media/Yo.jpg';
-import codingImage from '../images/media/coding.jpg'; // Ruta a la imagen coding.jpg
+import myPhoto from '../images/media/Yo.webp';
+import codingImage from '../images/media/coding.webp'; // Ruta a la imagen coding.jpg
 import Typewriter from 'typewriter-effect';
 
 const SobreMi = () => {

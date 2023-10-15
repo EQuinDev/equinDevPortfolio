@@ -3,7 +3,7 @@ import '../styles/habilidades.css';
 import ScrollReveal from 'scrollreveal';
 
 const Habilidades = () => {
-  // Importa todas las imágenes svg de la carpeta src/images/icons
+  // Importa todas las imágenes png de la carpeta src/img/icons
   const images = import.meta.globEager('../images/icons/*.svg');
 
   useEffect(() => {
