@@ -8,14 +8,20 @@ const Header = () => {
         sectionElement.scrollIntoView({ behavior: 'smooth' });
       }
     };
-  
+
+    const headerStyle = {
+        backgroundColor: '#222', // Color de fondo oscuro
+        padding: '1.5rem 1rem', // Espaciado superior e inferior aumentado
+    };
+
+    const linkStyle = 'text-white text-xl font-bold hover:text-blue-500'; // Estilo común para los enlaces
+
     return (
-      <nav className="p-4 flex justify-between items-center fixed z-50 w-full bg-gray-800 top-0 left-0">
+      <nav className="flex justify-between items-center fixed z-50 w-full top-0 left-0" style={headerStyle}>
         <a 
           href="#"
           onClick={(event) => handleClick(event, 'inicio')} 
-          className="text-white text-xl font-bold hover:text-blue-500"
-
+          className={linkStyle}
         >
           Elías Quinteros
         </a>
@@ -24,7 +30,7 @@ const Header = () => {
             <a
               href="#"
               onClick={(event) => handleClick(event, 'sobremi')}
-              className="text-white hover:text-blue-500"
+              className={linkStyle}
             >
               Sobre Mi
             </a>
@@ -33,7 +39,7 @@ const Header = () => {
             <a
               href="#"
               onClick={(event) => handleClick(event, 'habilidades')}
-              className="text-white hover:text-blue-500"
+              className={linkStyle}
             >
               Habilidades
             </a>
@@ -42,7 +48,7 @@ const Header = () => {
             <a
               href="#"
               onClick={(event) => handleClick(event, 'proyectos')}
-              className="text-white hover:text-blue-500"
+              className={linkStyle}
             >
               Proyectos
             </a>
@@ -50,7 +56,8 @@ const Header = () => {
         </ul>
       </nav>
     );
-  };
-  
+};
 
 export default Header;
+
+

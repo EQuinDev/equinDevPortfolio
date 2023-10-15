@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import SobreMi from './components/SobreMi';
 import './index.css';
 
 import { useState } from 'react';
@@ -17,7 +18,7 @@ function App() {
         </section>
 
         <section id='sobremi'>
-            
+            <SobreMi />
         </section>
 
         <section id='habilidades'>
