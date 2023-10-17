@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import '../styles/habilidades.css';
 import ScrollReveal from 'scrollreveal';
 
@@ -10,6 +10,19 @@ const Habilidades = () => {
     const sr = ScrollReveal();
     sr.reveal('.skills-gallery', { duration: 2000 });
   }, []);
+
+  const handleHabilidadesClick = (event) => {
+    event.preventDefault();
+    const sectionElement = document.querySelector('#habilidades');
+    if (sectionElement) {
+      const headerHeight = document.querySelector('nav').clientHeight; // Altura del header
+      const offset = headerHeight + 1000; // Ajusta este valor según sea necesario
+      window.scroll({
+        top: sectionElement.offsetTop - offset,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <div className="skills-container mt-20">
