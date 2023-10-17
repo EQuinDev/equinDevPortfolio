@@ -24,7 +24,7 @@ const SobreMi = () => {
                             }}
                             onInit={(typewriter) => {
                                 typewriter
-                                    .typeString('Elías Quinteros | Software Developer')
+                                    .typeString('Elías Quinteros | Ingeniero informático')
                                     .start();
                             }}
                         />
@@ -37,7 +37,7 @@ const SobreMi = () => {
                             onInit={(typewriter) => {
                                 typewriter
                                     .typeString(
-                                        'Bienvenidos a mi portafolio, soy Elías Quinteros y me dedico al desarrollo de software'
+                                        'Bienvenidos a mi portafolio, Soy un desarrollador de software con conocimientos en desarrollo front-end de aplicaciones web, análisis de bases de datos con SQL y experiencia en ciencia de datos utilizando Python y sus librerías clave como Pandas, NumPy, Matplotlib y Seaborn. Me enfoco en crear aplicaciones web interactivas y eficientes, priorizando una experiencia de usuario fluida y atractiva. Además, tengo habilidades sólidas en consulta y manipulación de bases de datos utilizando SQL, y puedo aplicar técnicas de análisis y visualización de datos para extraer información valiosa. '
                                     )
                                     .start();
                             }}
