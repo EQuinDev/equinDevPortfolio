@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/responsivo.css';
 
 const Header = () => {
   const [visible, setVisible] = useState(true);
@@ -40,7 +39,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`flex justify-between items-center z-50 w-full left-0`}
+      className={`flex items-center justify-between z-50 w-full left-0`}
       style={headerStyle}
     >
       <a
@@ -50,26 +49,38 @@ const Header = () => {
       >
         Elías Quinteros
       </a>
-      <ul className="flex space-x-4">
-        <li>
-          <a
-            href="#"
-            onClick={(event) => handleClick(event, 'habilidades')}
-            className={linkStyle}
-          >
-            Habilidades
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            onClick={(event) => handleClick(event, 'proyectos')}
-            className={linkStyle}
-          >
-            Proyectos
-          </a>
-        </li>
-      </ul>
+      <div className="hidden lg:flex space-x-4">
+        <a
+          href="#"
+          onClick={(event) => handleClick(event, 'habilidades')}
+          className={linkStyle}
+        >
+          Habilidades
+        </a>
+        <a
+          href="#"
+          onClick={(event) => handleClick(event, 'proyectos')}
+          className={linkStyle}
+        >
+          Proyectos
+        </a>
+      </div>
+      <div className="lg:hidden flex flex-col space-y-2 items-center">
+        <a
+          href="#"
+          onClick={(event) => handleClick(event, 'habilidades')}
+          className={`${linkStyle} my-2`}
+        >
+          Habilidades
+        </a>
+        <a
+          href="#"
+          onClick={(event) => handleClick(event, 'proyectos')}
+          className={`${linkStyle} my-2`}
+        >
+          Proyectos
+        </a>
+      </div>
     </nav>
   );
 };

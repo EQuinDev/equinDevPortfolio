@@ -1,6 +1,8 @@
 import React from 'react';
+import '../styles/responsivo.css';
 import fotoLinkedin from '../images/icons/linkedin.svg';
 import fotoGitHub from '../images/icons/github.svg';
+
 
 const Footer = () => {
   const linkedinLink = 'https://www.linkedin.com/in/equinteros98/';
