@@ -33,13 +33,18 @@ const Header = () => {
     padding: '1.5rem 1rem',
     transition: 'top 0.3s ease-in-out',
     top: visible ? '0' : '-100px',
+    // Estilos responsivos para pantallas más pequeñas
+    '@media (max-width: 640px)': {
+      padding: '0.5rem 0.5rem',
+      fontSize: '1rem',
+    },
   };
 
   const linkStyle = 'text-white text-xl font-bold hover:text-blue-500';
 
   return (
     <nav
-      className={`flex items-center justify-between z-50 w-full left-0`}
+      className={`flex justify-between items-center z-50 w-full left-0`}
       style={headerStyle}
     >
       <a
@@ -49,38 +54,26 @@ const Header = () => {
       >
         Elías Quinteros
       </a>
-      <div className="hidden lg:flex space-x-4">
-        <a
-          href="#"
-          onClick={(event) => handleClick(event, 'habilidades')}
-          className={linkStyle}
-        >
-          Habilidades
-        </a>
-        <a
-          href="#"
-          onClick={(event) => handleClick(event, 'proyectos')}
-          className={linkStyle}
-        >
-          Proyectos
-        </a>
-      </div>
-      <div className="lg:hidden flex flex-col space-y-2 items-center">
-        <a
-          href="#"
-          onClick={(event) => handleClick(event, 'habilidades')}
-          className={`${linkStyle} my-2`}
-        >
-          Habilidades
-        </a>
-        <a
-          href="#"
-          onClick={(event) => handleClick(event, 'proyectos')}
-          className={`${linkStyle} my-2`}
-        >
-          Proyectos
-        </a>
-      </div>
+      <ul className="flex space-x-4">
+        <li>
+          <a
+            href="#"
+            onClick={(event) => handleClick(event, 'habilidades')}
+            className={linkStyle}
+          >
+            Habilidades
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            onClick={(event) => handleClick(event, 'proyectos')}
+            className={linkStyle}
+          >
+            Proyectos
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
