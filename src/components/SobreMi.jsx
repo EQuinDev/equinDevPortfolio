@@ -46,7 +46,7 @@ const SobreMi = () => {
               delay: 20,
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('Ingeniero informático con experiencia en front-end, SQL y ciencia de datos. Especializado en aplicaciones web interactivas, consultas de bases de datos y análisis de datos con Python.').start();
+              typewriter.typeString('Ingeniero informático.').start();
             }}
           />
         </p>
