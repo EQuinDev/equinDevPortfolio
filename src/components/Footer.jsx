@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/responsivo.css';
-import fotoLinkedin from '../images/icons/linkedin.svg';
+import fotoLinkedin from '../images/media/linkedin_icon.svg';
 import fotoGitHub from '../images/icons/github.svg';
 
 
@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <p>Todos los derechos reservados | Año 2023</p>
+        <p>Todos los derechos reservados | Año 2024</p>
         <div className="flex space-x-4">
           <a
             href={linkedinLink}
