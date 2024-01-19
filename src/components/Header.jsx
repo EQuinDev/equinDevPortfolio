@@ -73,6 +73,15 @@ const Header = () => {
             Proyectos
           </a>
         </li>
+        <li>
+          <a
+            href="#"
+            onClick={(event) => handleClick(event, 'proyectos')}
+            className={linkStyle}
+          >
+            Sobre mi
+          </a>
+        </li>
       </ul>
     </nav>
   );
