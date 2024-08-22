@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/responsivo.css';
 import fotoLinkedin from '../images/media/linkedin_icon.svg';
-import fotoGitHub from '../images/icons/github.svg';
+import fotoGitHub from '../images/media/github.svg';
 
 
 const Footer = () => {

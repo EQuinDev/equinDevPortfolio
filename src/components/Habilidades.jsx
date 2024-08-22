@@ -4,7 +4,7 @@ import ScrollReveal from 'scrollreveal';
 
 const Habilidades = () => {
   // Importa todas las imágenes png de la carpeta src/img/icons
-  const images = import.meta.globEager('../images/icons/*.svg');
+  const images = import.meta.globEager('../images/habilidades/*.svg');
 
   useEffect(() => {
     const sr = ScrollReveal();
